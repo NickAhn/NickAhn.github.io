@@ -2,6 +2,38 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.logo {
+    text-align: center;
+}
+
 .container {
-    font-size: normal;
+    text-align: center;
+    padding: 70px;
+}
+
+/* nav {
+    font-weight: bold;
+} */
+
+nav ul {
+    /* get rid of bullet lines */
+    list-style: none;
+    /* center ul */
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+nav li {
+    margin-top: 10px;
+}
+
+nav ul > li > a {
+    /* get rid of underline in links */
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #808080
 }
