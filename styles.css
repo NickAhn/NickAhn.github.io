@@ -38,6 +38,15 @@ body {
     margin-top: -10px;
 }
 
+#icons > ul > li {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: -10;
+    position: relative;
+}
+
 nav ul {
     /* get rid of bullet lines */
     list-style: none;
