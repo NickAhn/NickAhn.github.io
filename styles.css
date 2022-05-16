@@ -8,10 +8,10 @@ body {
 /* Allign all text horizontally and vertically */
 .outer {
   display: table;
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
-  height: 100%;
+  height: 100vh; /* vh will match the size of the device's screen */
   width: 100%;
 }
 
@@ -43,7 +43,6 @@ body {
 .inner > p {
     /* font-family: 'Courier New', Courier, monospace; */
     font-size: 25px;
-    color: #BBB;
 }
 
 
@@ -80,3 +79,11 @@ nav ul > li > a {
 nav a:hover {
     color: #808080
 }
+
+
+.about {
+    background-color: #808080;
+    padding: 10rem 0;
+    display: grid;
+}
+
