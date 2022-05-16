@@ -111,14 +111,14 @@ nav a:hover {
     font-size: 32px;
     color: #1f1f1f;
     text-decoration: none;
-    /* opacity: 0;  */
-    /* pointer-events: none; */
+    opacity: 0; 
+    pointer-events: none;
     transition: all .4s;
     
 }
 
 .to-top.active {
     bottom: 32px;
-    pointer-events: auto;
+    pointer-events: auto; /* sets when element can be a target of pointer events */
     opacity:1;
 }
