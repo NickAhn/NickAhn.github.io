@@ -1,22 +1,38 @@
-/* COLOR PALETTE
-BLACK: #2F2E2C
-DARK GREY: #ABA6A1
-LIGHT GREY: #EFE3E2
-WHITE: 
-BEIGE: F7F2EF
+:root {
+    --black: #2f2e2c;
+    --darkgrey: #aba6a1;
+    --lightgrey: #efe3e2;
+    /* --white: */
+    --beige: #f7f2ef;
+}
 
-*/
-
-
+/* GLOBAL STYLING */
 html {
     scroll-behavior: smooth;
 }
+
+/* @media (min-width: 640px) { body {font-size:1rem;} } */
+/* @media (min-width:960px) { body {font-size:1.2rem;} } */
+/* @media (min-width:1100px) { body {font-size:1.5rem;} } */
 
 body {
     font-family: 'Montserrat', "Helvetica", sans-serif;
     background-color: #222;
     /* background-color: #2f2e2c; */
     color: #fff;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+.container {
+    padding: 0 1em;
+    width: 100%;
+    max-height: 100vh;
+    border: 2px solid red;
 }
 
 .header {
@@ -91,7 +107,7 @@ nav ul {
 
 nav li {
     font-size: 40px;
-    font-weight: bold;
+    font-weight: bold; /* TODO: monteserrat: bold*/
     margin: 15px 0;
 }
 
@@ -108,24 +124,34 @@ nav a:hover {
 /* ABOUT SECTION */
 .about {
     /* background-color: #e3dad5; */
-    background-color: #F7F2EF;
+    background-color: var(--beige);
     width: 100%;
     height: 100vh;
     display: grid;
+    border: 2px solid red;
 }
 
 /* about header */
-.about_container > h1 {
+.container#about > h1 {
     color: #333;
     font-size: 6vh;
     font-weight: lighter;
 }
 
+.about > img {
+    /* border: 10px white; */
+    position: absolute;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    object-position: 100px 10rem;
+}
+
 .about#biography {
-    color: #2F2E2C;
-    background-color: #e7e3e2;
+    color: var(--black);
+    background-color: var(--lightgrey);
     /* width: 100%; */
-    width: 50%;
+    width: 40%;
     height: 100%;
     max-height: 700px;
 
