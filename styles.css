@@ -58,7 +58,7 @@ body {
     text-align: center;
     color: #fff;
     font-weight: bold;
-    font-size: 90px;
+    font-size: 100px;
     margin-bottom: 20px;
 }
 
@@ -90,7 +90,7 @@ nav ul {
 }
 
 nav li {
-    font-size: 25px;
+    font-size: 40px;
     font-weight: bold;
     margin: 15px 0;
 }
@@ -117,7 +117,7 @@ nav a:hover {
 /* about header */
 .about_container > h1 {
     color: #333;
-    font-size: 5vh;
+    font-size: 6vh;
     font-weight: lighter;
 }
 
@@ -135,7 +135,12 @@ nav a:hover {
 }
 
 .about#biography > p {
+    /* background-color: red; */
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
     margin-left: 100px;
+    margin-right: 10px;
 }
 
 /* scroll-up button */
