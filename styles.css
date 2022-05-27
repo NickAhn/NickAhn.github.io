@@ -19,7 +19,6 @@ p {
     margin: 0;
 }
 
-
 header,
 section {
     padding: 3rem;
@@ -37,10 +36,33 @@ body {
     color: #fff;
 }
 
+
+
 img {
     max-width: 100%;
     display: block;
 }
+
+/* @media (min-width: 40em) {
+    header,
+    section {
+        padding: 7rem 0;
+    }
+} */
+
+
+section {
+    background-color: var(--beige);
+    width: 100vw;
+    height: 100vh;
+    /* padding: 3rem; */
+
+}
+
+section h2, p {
+    color: var(--black);
+}
+
 
 .container {
     /* padding: 0 1em; */
@@ -59,6 +81,15 @@ img {
     .split {
         flex-direction: row;
     }
+
+    .split > * {
+        flex-basis: 100%; /* ideal width */
+    }
+
+
+    .split > * + * { /* Adjacency selector: any element that has a sibiling before it*/
+        margin-left: 2em;
+    }
 }
 
 
@@ -66,8 +97,8 @@ img {
     font-family: 'Times New Roman', Times, serif;
     color: #222;
     text-align: center;
-    font-size: 50px;
     font-weight: lighter;
+    font-size: 3em;
 }
 
 
