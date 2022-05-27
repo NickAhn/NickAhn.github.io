@@ -11,12 +11,27 @@ html {
     scroll-behavior: smooth;
 }
 
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+
+header,
+section {
+    padding: 3rem;
+}
+
 /* @media (min-width: 640px) { body {font-size:1rem;} } */
 /* @media (min-width:960px) { body {font-size:1.2rem;} } */
 /* @media (min-width:1100px) { body {font-size:1.5rem;} } */
 
 body {
     font-family: 'Montserrat', "Helvetica", sans-serif;
+    font-size: 1.3125rem;
     background-color: #222;
     /* background-color: #2f2e2c; */
     color: #fff;
@@ -27,19 +42,32 @@ img {
     display: block;
 }
 
-
 .container {
-    padding: 0 1em;
-    width: 100%;
+    /* padding: 0 1em; */
+    margin-inline: auto;
+    width: min(90%, 70.5rem); /* responsive width */
     max-height: 100vh;
     border: 2px solid red;
 }
+
+.split {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 40em) {
+    .split {
+        flex-direction: row;
+    }
+}
+
 
 .header {
     font-family: 'Times New Roman', Times, serif;
     color: #222;
     text-align: center;
     font-size: 50px;
+    font-weight: lighter;
 }
 
 
@@ -78,14 +106,12 @@ img {
     margin-bottom: 20px;
 }
 
-
 /* TODO: Random Quote */
 .inner > p {
     /* font-family: 'Courier New', Courier, monospace; */
     font-size: 25px;
     font-weight: 300; /*TODO: check difference*/
 }
-
 
 #icons > ul > li {
     display: inline-block;
@@ -96,6 +122,8 @@ img {
     position: relative;
 }
 
+
+
 /* Nav Bar */
 nav ul {
     /* get rid of bullet lines */
@@ -103,6 +131,7 @@ nav ul {
     /* center ul */
     margin: 0;
     padding: 0;
+    border: 2px solid red;
 }
 
 nav li {
@@ -121,6 +150,8 @@ nav a:hover {
     color: #808080;
 }
 
+
+
 /* ABOUT SECTION */
 .about {
     /* background-color: #e3dad5; */
@@ -132,17 +163,15 @@ nav a:hover {
 }
 
 /* about header */
-.container#about > h1 {
+/* .container#about > h1 {
     color: #333;
     font-size: 6vh;
-    font-weight: lighter;
-}
+} */
 
 .about > img {
     /* border: 10px white; */
     position: absolute;
-    width: 100%;
-    max-width: 800px;
+    max-width: 50%;
     height: auto;
     object-position: 100px 10rem;
 }
@@ -168,6 +197,8 @@ nav a:hover {
     margin-left: 100px;
     margin-right: 10px;
 }
+
+
 
 /* scroll-up button */
 .to-top {
