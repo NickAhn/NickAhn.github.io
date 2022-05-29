@@ -103,6 +103,12 @@ section h2, p {
     margin-bottom: 3rem;
 }
 
+@media (max-width: 730px) {
+    .header {
+        font-size: 2em;
+    }
+}
+
 
 /* SECTIONS */
 
@@ -136,6 +142,7 @@ section h2, p {
     color: #fff;
     font-weight: bold;
     font-size: 100px;
+    margin: 10px;
 }
 
 /* TODO: Random Quote */
@@ -143,15 +150,14 @@ section h2, p {
     /* font-family: 'Courier New', Courier, monospace; */
     font-size: 25px;
     font-weight: 300; /*TODO: check difference*/
+    color: white;
 }
 
 #icons > ul > li {
     display: inline-block;
-    margin-left: 10px;
-    /* margin-right: 10px; */
-    /* margin-bottom: 20px; */
-    /* margin-top: -10; */
+    /* margin-left: 10px; */
     position: relative;
+    padding:  6px;
 }
 
 
@@ -179,6 +185,28 @@ nav ul > li > a {
 
 nav a:hover {
     color: #808080;
+}
+
+#icon {
+    font-size: 40px;
+}
+
+@media (max-width: 730px) {
+    .header {
+        font-size: 2em;
+    }
+
+    .logo {
+        font-size: 2em;
+    }
+
+    .inner > p {
+        font-size: 15px;
+    }
+
+    nav li {
+        font-size: 25px;
+    }
 }
 
 
