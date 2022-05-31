@@ -74,7 +74,7 @@ section h2, p {
     margin-inline: auto;
     width: min(90%, 100.5rem); /* responsive width */
     max-height: 100vh;
-    /* border: 2px solid red; */
+    border: 2px solid red;
 }
 
 /* Flexbox-container */
@@ -84,23 +84,7 @@ section h2, p {
     
 }
 
-.flexbox-item {
-    /* background-color: var(--bluePastel); */
-    box-shadow: 0px 0px 10px var(--lightgrey);
-    height: 70vh;
-}
 
-.flexbox-item button {
-    text-decoration: none;
-}
-
-#cs {
-    /* background-color: var(--bluePastel); */
-}
-
-#art {
-    /* background-color: var(--lightestgrey); */
-}
 
 /* .box {
     width: 100px;
@@ -240,8 +224,43 @@ nav a:hover {
     }
 }
 
+.row {
+    /* margin-top: 5%; */
+    display:flex;
+    justify-content: center;
+    border: 2px solid red;
+    flex-direction: col;
+}
 
 /* Projects Section */
+.flexbox-item {
+    flex-basis:35%;
+    margin: 1em;
+
+    /* box-shadow: 0px 0px 10px var(--lightgrey); */
+    border: 1px solid var(--black);
+    height: 30vh;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.flexbox-item:hover {
+    background-color: var(--lightestgrey);
+}
+
+@media (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+
+
+.flexbox-item button {
+    text-decoration: none;
+}
+
+
 .button {
     /* bottom: 0; */
     /* right: 0; */
