@@ -65,6 +65,7 @@ section {
 
 section h2, p {
     color: var(--black);
+    margin: 1em;
 }
 
 
@@ -74,16 +75,41 @@ section h2, p {
     width: min(90%, 100.5rem); /* responsive width */
     max-height: 100vh;
     /* border: 2px solid red; */
-    background-color: white;
-    box-shadow: 0px 0px 10px var(--darkgrey);
 }
 
+/* Flexbox-container */
 .split {
     display: flex;
     flex-direction: column;
+    
 }
 
-@media (min-width: 40em) {
+.flexbox-item {
+    /* background-color: var(--bluePastel); */
+    box-shadow: 0px 0px 10px var(--lightgrey);
+    height: 70vh;
+}
+
+.flexbox-item button {
+    text-decoration: none;
+}
+
+#cs {
+    /* background-color: var(--bluePastel); */
+}
+
+#art {
+    /* background-color: var(--lightestgrey); */
+}
+
+/* .box {
+    width: 100px;
+    height: 100px;
+    background-color: var(--bluePastel);
+    border: 2px solid red;
+} */
+
+@media (min-width: 700px) {
     .split {
         flex-direction: row;
     }
@@ -100,10 +126,10 @@ section h2, p {
 
 
 .header {
-    font-family: 'Times New Roman', Times, serif;
+    /* font-family: 'Times New Roman', Times, serif; */
     color: #222;
     text-align: center;
-    font-weight: lighter;
+    font-weight: bolder;
     font-size: 3em;
     margin-bottom: 3rem;
 }
@@ -218,7 +244,7 @@ nav a:hover {
 
 /* scroll-up button */
 .to-top {
-    background: white;
+    background: var(--bluePastel);
     /* button placement */
     position: fixed;
     bottom: 16px; 
