@@ -1,0 +1,41 @@
+:root {
+    --black: #2f2e2c;
+    --darkgrey: #aba6a1;
+    --lightgrey: #efe3e2;
+    --beige: #f7f2ef;
+    --lightestgrey: #e4e4e3;
+
+    --whitebg: #f8faf9;
+    --bluePastel: #bbdaf1;
+    --bluePastelDark: #8da6b7;
+
+}
+
+body {
+    font-family: 'Montserrat', "Helvetica", sans-serif;
+    font-size: 1.3125rem;
+    background-color: var(--whitebg);
+    /* background-color: #2f2e2c; */
+    color: black;
+}
+
+.header {
+    font-size: 3em;
+    color: black;
+
+    text-align: center;
+}
+
+
+
+
+
+.back-button {
+    text-decoration: none;
+    font-weight:900;
+    color: var(--black);
+}
+
+.back-button:hover {
+    color: var(--darkgrey)
+}

@@ -74,7 +74,7 @@ section h2, p {
     margin-inline: auto;
     width: min(90%, 100.5rem); /* responsive width */
     max-height: 100vh;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 /* Flexbox-container */
@@ -228,7 +228,7 @@ nav a:hover {
     /* margin-top: 5%; */
     display:flex;
     justify-content: center;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     flex-direction: col;
 }
 
@@ -271,7 +271,7 @@ nav a:hover {
 
 /* scroll-up button */
 .to-top {
-    background: var(--bluePastel);
+    background: var(--lightestgrey);
     /* button placement */
     position: fixed;
     bottom: 16px; 
