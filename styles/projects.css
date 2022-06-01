@@ -53,12 +53,17 @@ h1 {
     color: var(--darkgrey)
 }
 
+section {
+    margin: 1em;
+}
+
 /* Programming Languages */
 .pl-row {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     font-size: 3em;
+    column-gap: 10px;
 }
 
 .pl-row img {
