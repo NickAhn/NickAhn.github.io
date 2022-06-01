@@ -22,6 +22,7 @@ h2,
 h3,
 p {
     margin: 0;
+    font-weight: 300;
 }
 
 header,
@@ -85,14 +86,6 @@ section h2, p {
 }
 
 
-
-/* .box {
-    width: 100px;
-    height: 100px;
-    background-color: var(--bluePastel);
-    border: 2px solid red;
-} */
-
 @media (min-width: 700px) {
     .split {
         flex-direction: row;
@@ -113,15 +106,9 @@ section h2, p {
     /* font-family: 'Times New Roman', Times, serif; */
     color: #222;
     text-align: center;
-    font-weight: bolder;
+    font-weight: normal;
     font-size: 3em;
     margin-bottom: 3rem;
-}
-
-@media (max-width: 730px) {
-    .header {
-        font-size: 2em;
-    }
 }
 
 
@@ -155,7 +142,7 @@ section h2, p {
 .logo {
     text-align: center;
     color: #fff;
-    font-weight: bold;
+    font-weight: 300;
     font-size: 100px;
     margin: 10px;
 }
@@ -188,7 +175,7 @@ nav ul {
 
 nav li {
     font-size: 40px;
-    font-weight: bold; /* TODO: monteserrat: bold*/
+    /* font-weight: 300; TODO: monteserrat: bold */
     margin: 15px 0;
 }
 
@@ -206,7 +193,7 @@ nav a:hover {
     font-size: 40px;
 }
 
-@media (max-width: 730px) {
+@media (max-width: 700px) {
     .header {
         font-size: 2em;
     }
@@ -223,6 +210,7 @@ nav a:hover {
         font-size: 25px;
     }
 }
+
 
 .row {
     /* margin-top: 5%; */
