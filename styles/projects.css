@@ -15,7 +15,7 @@ body {
     /* margin: 0;
     padding: 0; */
     font-family: 'Montserrat', "Helvetica", sans-serif;
-    /* font-size: 1.3125rem; */
+    font-size: 18px;
     background-color: var(--whitebg);
     /* background-color: #2f2e2c; */
     color: black;
@@ -73,11 +73,16 @@ h1 {
 /* Projects */
 section a {
     text-decoration: none;
+    color: #3D426B;
+}
+section a:hover {
+    color: var(--bluePastelDark);
 }
 
 .row {
+    margin: 0 10%;
     display: flex;
-    justify-content: center;
+    justify-content:flex-start;
 }
 
 .col {
