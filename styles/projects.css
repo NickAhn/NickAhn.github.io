@@ -3,7 +3,7 @@
     --darkgrey: #aba6a1;
     --lightgrey: #efe3e2;
     --beige: #f7f2ef;
-    --lightestgrey: #e4e4e3;
+    --lightestgrey: #EEEEEE;
 
     --whitebg: #f8faf9;
     --bluePastel: #bbdaf1;
@@ -83,6 +83,10 @@ section a:hover {
     margin: 0 10%;
     display: flex;
     justify-content:flex-start;
+}
+
+.row:hover {
+    background-color: #EEEEEE;
 }
 
 .col {
