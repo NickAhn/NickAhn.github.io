@@ -12,30 +12,64 @@
 }
 
 body {
+    /* margin: 0;
+    padding: 0; */
     font-family: 'Montserrat', "Helvetica", sans-serif;
-    font-size: 1.3125rem;
+    /* font-size: 1.3125rem; */
     background-color: var(--whitebg);
     /* background-color: #2f2e2c; */
     color: black;
 }
 
+body,
+h2,
+h3,
+p {
+    font-weight: 300;
+}
+
+h1 {
+    font-weight: normal;
+}
+
+
 .header {
     font-size: 3em;
+    font-weight: normal;
     color: black;
 
     text-align: center;
 }
 
 
-
-
-
 .back-button {
     text-decoration: none;
-    font-weight:900;
     color: var(--black);
 }
 
 .back-button:hover {
     color: var(--darkgrey)
 }
+
+/* Programming Languages */
+.pl-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 3em;
+}
+
+.pl-row img {
+    width: 1.1em;
+    height: 1.1em;
+}
+
+.pl-row img {
+    max-width: 100px;
+}
+
+/* Projects */
+section a {
+    text-decoration: none;
+}
+
